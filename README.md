@@ -10,7 +10,7 @@ One version of the code will be for an API backend-only web application. In othe
 The other version will be used to create a website. It will serve HTML, JavaScript, and cascading style sheets (CSS) files. Once you have the web applications ready, you will use Go templates to create a templated version of each.
 
 
-This project is for the website one
+This project is for the API Handler one
 
 
 ## Important notes

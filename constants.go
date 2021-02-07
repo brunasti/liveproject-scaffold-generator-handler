@@ -1,3 +1,3 @@
 package main
 
-const appName = "Scaffold Generator v 1.0"
+const appName = "API Handler v 1.0"

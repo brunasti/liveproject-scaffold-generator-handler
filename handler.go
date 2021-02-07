@@ -14,7 +14,7 @@ func handler(writer http.ResponseWriter, request *http.Request) {
 	}
 }
 
-func healthcheck(writer http.ResponseWriter, request *http.Request) {
+func healthCheck(writer http.ResponseWriter, request *http.Request) {
 	log.Printf("/healthcheck [%v]\n", request.URL.Path[1:])
 	n, err := fmt.Fprintf(writer, "ok")
 	if err != nil {
@@ -25,7 +25,7 @@ func healthcheck(writer http.ResponseWriter, request *http.Request) {
 func main() {
 	fmt.Println(appName + " ------------")
 	http.HandleFunc("/", handler)
-	http.HandleFunc("/healthcheck", healthcheck)
+	http.HandleFunc("/healthcheck", healthCheck)
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Fatal(err)
